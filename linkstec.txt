@@ -1,0 +1,60 @@
+ALREADY SAW
+
+REACT ROUTER V4
+https://reacttraining.com/react-router/web/guides/quick-start
+https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf
+https://codepen.io/pshrmn/pen/YZXZqM
+
+
+https://github.com/xat/react-component-composition-cheatsheet
+https://gorillalogic.com/blog/webpack-and-cors/?utm_content=51269775&utm_medium=social&utm_source=facebook
+https://www.sitepoint.com/git-better-learn-aliases-settings-tools-background/
+https://vsavkin.com/functional-typescript-316f0e003dc6#.rfud6ucvw
+https://blog.qmo.io/ultimate-guide-to-api-design/
+
+
+css pro tips
+https://github.com/AllThingsSmitty/css-protips#vertically-center-anything
+
+
+React
+
+https://www.lullabot.com/articles/building-an-enterprise-react-application-part-1
+
+react starter
+https://github.com/arcofdescent/react-starter
+
+
+REACT LINKS
+
+
+https://reactql.org/docs/
+
+
+https://engineering.musefind.com/our-best-practices-for-writing-react-components-dec3eb5c3fc8
+
+
+
+https://medium.com/@learnreact/container-components-c0e67432e005
+
+webpack 2 boilerplate based that help with this setup express
+https://github.com/leifoolsen/webpack2-boilerplate
+
+ACCESIBILITY
+
+https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/
+
+NODEJS
+
+https://medium.freecodecamp.com/understanding-node-js-event-driven-architecture-223292fcbc2d
+
+async await node
+http://thecodebarbarian.com/80-20-guide-to-async-await-in-node.js.html
+
+DEEP LEARNING
+
+https://www.datacamp.com/courses/deep-learning-in-python?utm_source=fb_paid&utm_medium=fb_desktop&utm_campaign=dc_visitors
+
+
+grammar in use english book
+https://iuristebi.files.wordpress.com/2011/07/english-grammar-in-use-reference-and-practice-for-intermediate-students-of-english.pdf

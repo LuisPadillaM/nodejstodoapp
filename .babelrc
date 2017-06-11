@@ -1,0 +1,36 @@
+{
+    "presets": [
+       "react",
+       "stage-1"
+       // Transpile React components to JavaScript
+    ],
+    "env": {
+      "development": {
+        "presets": [
+          "env",
+          "react-hmre"
+        ]
+      },
+      "production": {
+        "presets": [
+          [
+            "env",
+            {
+              "es2015": {
+                "modules": false
+              }
+            }
+          ]
+        ],
+        "plugins": [
+          "transform-react-constant-elements",
+          "transform-react-remove-prop-types"
+        ]
+    },
+    "test": {
+      "presets": [
+        "env"
+      ]
+    }
+  }
+}
