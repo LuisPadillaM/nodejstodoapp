@@ -1,27 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-require('es6-promise').polyfill();
-require('isomorphic-fetch');
+import Input from 'react-toolbox/lib/input';
+import  { Button } from 'react-toolbox/lib/button';
 
 class TodoForm extends React.Component{
 
   constructor(props) {
     super(props);
+    this.state = { itemName: ''}
     this.submit = this.submit.bind(this);
   }
 
+  handleChange = (name, value) => {
+    this.setState({...this.state, [name]: value});
+  };
+
   submit(e){
-    let item = { "task": this.itemInput.value} ;
     e.preventDefault();
+    let item = { "task": this.state.itemName} ;
     this.props.add(item);
-    this.itemInput.value = "";
   }
 
   render() {
     return(
-    <form action="" onSubmit= {this.submit}>
-      <input type="text" ref={ (input) => {this.itemInput = input }} name="item" placeholder="Add new item.." required />
-      <button type="submit">Add item</button>
+    <form action="" onSubmit= {this.submit} method="POST" >
+      <div className="form-first">
+        <Input className="input_field" type="text" value ={this.state.itemName}  onChange={this.handleChange.bind(this, 'itemName')} label="New item" required />
+        <Button icon="add" floating primary mini  type="submit" />
+      </div>
     </form>
     )
   }

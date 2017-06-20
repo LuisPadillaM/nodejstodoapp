@@ -9,6 +9,9 @@
         "presets": [
           "env",
           "react-hmre"
+        ],
+        "plugins": [
+          "transform-class-properties"
         ]
       },
       "production": {

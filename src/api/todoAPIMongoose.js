@@ -1,19 +1,5 @@
-// import "whatwg-fetch";
-// require('es6-promise').polyfill();
-// require('isomorphic-fetch');
-import mongoose from "mongoose";
-
-// Connect to the database
-mongoose.connect("mongodb://test:test@ds121222.mlab.com:21222/todo_app");
-
-let todoScheman = new mongoose.Schema({
-  item: String
-});
-
-import bodyParser from "body-parser";
-let urlencodedParser = bodyParser.urlencoded({ extended: false });
-
-import getBaseUrl from "./baseUrl";
+import "whatwg-fetch";
+import getBaseUrl from "./baseUrl2";
 
 const baseUrl = getBaseUrl();
 

@@ -2,7 +2,10 @@ import React from 'react';
 import TodoForm from "./todoForm";
 import TodoItems from "./todoItems";
 import Loader from "./Loader";
-import { getTodo, addItem, deleteItem } from "../api/todoApi";
+// import {list as mdcList } from 'material-components-web';
+import { getTodo, addItem, deleteItem } from "../api/todoApiMongoose";
+// import { getTodo, addItem, deleteItem } from "../api/todoApi";
+
 
 class TodoApp extends React.Component {
 
@@ -49,7 +52,7 @@ class TodoApp extends React.Component {
     deleteItem(id).then(() =>{
       this.setState({
         items: this.state.items.filter((value) =>{
-          return value.id !== id;
+          return value._id !== id;
         })
       });
     }, function(error){
@@ -61,20 +64,20 @@ class TodoApp extends React.Component {
 
   // }
 
-
-
-
-
   render(){
+    const {items, loading, error} = this.state;
     return(
       <div>
         <h1>Todo App</h1>
         <TodoForm add={this.addItemTodo} />
-        {(this.state.loading) ?
+        {(loading) ?
         <Loader /> :
-        (this.state.error) ?
+        (error) ?
         <p> Error Loading Menu Items</p> :
-        <TodoItems items={this.state.items} deleteItem={this.deleteItemTodo} />
+        (items.length) ?
+        <TodoItems items={items} deleteItem={this.deleteItemTodo} />
+        :
+        <span> No todo tasks yet </span>
         }
       </div>
     )
