@@ -1,17 +1,15 @@
 {
-  "name": "boilerplate",
+  "name": "todo_app_node_react",
   "version": "1.0.0",
   "description": "Useful boilerplate for web development",
   "main": "index.js",
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
-    "start": "npm-run-all --parallel open:src lint:watch",
+    "start": "npm-run-all --parallel open:src lint:watch start-mockapi",
     "open:src": "babel-node buildScripts/srcServer.js",
     "lint": "esw webpack.config.* src buildScripts --color",
     "lint:watch": "npm run lint -- --watch",
-    "localtunnel": "lt --port 3000 --subdomain test",
-    "share": "npm-run-all --parallel open:src localtunnel",
-    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
+    "test": "jest --coverage --no-cache",
     "test:watch": "npm run test -- --watch",
     "generate-mock-data": "babel-node buildScripts/generateMockData",
     "pre-start-mockapi": "npm run generate-mock-data",
@@ -37,7 +35,21 @@
     "url": "https://github.com/LuisPadillaM/websetup_npmscripts"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/api/todoApi.js"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.s*css$": "identity-obj-proxy"
+    },
+    "coverageThreshold": {
+      "global": {
+        "branches": 30,
+        "functions": 30,
+        "lines": 30,
+        "statements":30
+      }
+    }
   },
   "author": "Luis Padilla",
   "license": "MIT",
@@ -46,6 +58,7 @@
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
     "babel-loader": "^7.0.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.5",
     "babel-polyfill": "^6.23.0",
@@ -55,10 +68,10 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-react-hmre": "^1.1.1",
     "babel-preset-stage-1": "^6.24.1",
-    "chai": "^3.5.0",
     "chalk": "^1.1.3",
     "compression": "^1.6.2",
     "css-loader": "^0.28.4",
+    "enzyme": "^2.8.2",
     "eslint": "^3.19.0",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-node": "^4.2.2",
@@ -67,19 +80,19 @@
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
     "html-webpack-plugin": "^2.28.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^20.0.4",
     "jest-cli": "^20.0.4",
-    "jsdom": "^10.1.0",
     "json-schema-faker": "^0.5.0-rc5",
     "json-server": "^0.10.1",
-    "mocha": "^3.4.1",
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.0.2",
-    "numeral": "^2.0.6",
     "open": "0.0.5",
     "postcss-loader": "^2.0.6",
     "postcss-reporter": "^4.0.0",
     "prop-types": "^15.5.10",
     "react-hot-loader": "^3.0.0-beta.7",
+    "react-test-renderer": "^15.6.1",
     "react-toolbox": "^2.0.0-beta.12",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.17.0",

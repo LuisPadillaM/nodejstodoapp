@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoForm render test 1`] = `
+<form
+  action=""
+  method="POST"
+  onSubmit={[Function]}
+>
+  <div
+    className="form-first"
+  >
+    <div
+      className="input_field"
+      data-react-toolbox="input"
+    >
+      <input
+        className=""
+        defaultValue={undefined}
+        disabled={false}
+        maxLength={undefined}
+        name={undefined}
+        onChange={[Function]}
+        onKeyPress={undefined}
+        required={true}
+        role="input"
+        type="text"
+        value=""
+      />
+      <span
+        className={undefined}
+      />
+      <label
+        className=""
+      >
+        New item
+        <span
+          className={undefined}
+        >
+           * 
+        </span>
+      </label>
+    </div>
+    <button
+      className=""
+      data-react-toolbox="button"
+      disabled={false}
+      href={undefined}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchStart={[Function]}
+      type="submit"
+    >
+      <span
+        aria-label=""
+        className="material-icons"
+        data-react-toolbox="font-icon"
+      >
+        add
+      </span>
+    </button>
+  </div>
+</form>
+`;

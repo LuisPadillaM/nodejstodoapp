@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Font icons render test 1`] = `
+<span>
+  <span
+    aria-label=""
+    className="material-icons"
+    data-react-toolbox="font-icon"
+  >
+    edit
+  </span>
+  <span
+    aria-label=""
+    class="small"
+    className="material-icons"
+    data-react-toolbox="font-icon"
+  >
+    delete
+  </span>
+</span>
+`;

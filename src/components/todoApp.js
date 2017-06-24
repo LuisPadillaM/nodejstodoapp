@@ -2,9 +2,8 @@ import React from 'react';
 import TodoForm from "./todoForm";
 import TodoItems from "./todoItems";
 import Loader from "./Loader";
-// import {list as mdcList } from 'material-components-web';
-import { getTodo, addItem, deleteItem } from "../api/todoApiMongoose";
-// import { getTodo, addItem, deleteItem } from "../api/todoApi";
+// import { getTodo, addItem, deleteItem } from "../api/todoApiMongoose";
+import { getTodo, addItem, deleteItem } from "../api/todoApi";
 
 
 class TodoApp extends React.Component {

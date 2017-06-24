@@ -1,15 +1,8 @@
 let mongoose = require( 'mongoose' );
 let Schema = mongoose.Schema;
 
-// Create a schema
-// let todoSchema = new Schema({
-//   task: { type: String, required: true, unique: true },
-//   created_at: Date,
-//   updated_at: Date
-// });
-
 let todoSchema = new Schema({
-  task: { type: String, required: true },
+  task: { type: String, required: true, unique: true },
   created_at: Date,
   updated_at: Date
 });

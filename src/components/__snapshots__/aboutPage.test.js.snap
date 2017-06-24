@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About page render test 1`] = `
+<h3>
+  About
+</h3>
+`;

@@ -1,9 +1,8 @@
 import webpack from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
-import autoprefixer from "autoprefixer";
+import autoprefixer from "autoprefixer"; //cssnext have autoprefixer
 import cssnext from "postcss-cssnext";
 import postcssreporter from "postcss-reporter";
-// import postcssreporter from "postcss-reporter";
 
 import path from 'path';
 
@@ -39,10 +38,6 @@ export default {
     }),
 
     // Create HTML file that includes reference to bundled JS
-    // new HtmlWebpackPlugin({
-    //   template: "src/index.html",
-    //   inject: true
-    // }),
     new HtmlWebpackPlugin({  // Also generate a todo
       filename: 'index.html',
       // template: "src/index.html",

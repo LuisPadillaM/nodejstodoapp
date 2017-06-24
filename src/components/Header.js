@@ -11,18 +11,14 @@ const GithubIcon = () => (
   </svg>
 );
 
-const AppBarTest = () => (
-  <AppBar title='Todo App' leftIcon='menu' rightIcon={<GithubIcon />}>
-    <Navigation type='horizontal'>
-      <Link to="/todo">Home</Link>
-      <Link to="/about">About</Link>
-    </Navigation>
-  </AppBar>
-);
-
 const Header = () =>
   (
-      <AppBarTest />
+    <AppBar title='Todo App' leftIcon='menu' rightIcon={<GithubIcon />}>
+      <Navigation type='horizontal'>
+        <Link to="/todo">Home</Link>
+        <Link to="/about">About</Link>
+      </Navigation>
+    </AppBar>
   )
 
 export default Header;

@@ -1,7 +1,7 @@
 {
     "presets": [
-       "react",
-       "stage-1"
+       "stage-1",
+        "react"
        // Transpile React components to JavaScript
     ],
     "env": {
@@ -33,6 +33,9 @@
     "test": {
       "presets": [
         "env"
+      ],
+      "plugins": [
+          "transform-class-properties"
       ]
     }
   }
