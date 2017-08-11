@@ -7,7 +7,6 @@ export function get(url) {
   return fetch(baseUrl + url).then(onSuccess, onError);
 }
 
-
 export function add(url, item){
 
   const request = new Request(baseUrl + url, {
@@ -29,7 +28,17 @@ export function del(url){
   return fetch(request).then(onSuccess, onError);
 }
 
-
+export function update(url, item){
+  const request = new Request(baseUrl + url, {
+    method: "PUT",
+    headers: new Headers({
+      'Content-Type':'application/json'
+    }),
+    mode: 'cors',
+    body: JSON.stringify(item)
+  });
+  return fetch(request).then(onSuccess, onError);
+}
 
 function onError(error){
   console.log(error);

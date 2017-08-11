@@ -8,6 +8,7 @@ import path from 'path';
 
     // autoprefixer,
 const postcssPlugins = () => [
+    require('postcss-mixins'),
     cssnext(),
     postcssreporter()
 ]
@@ -69,13 +70,17 @@ export default {
       {test: /\.ico$/, loader: 'file-loader?name=[name].[ext]'},
       {test: /(\.css|\.scss|\.sass)$/, loaders: [
         { loader:'style-loader'},
-        { loader: 'css-loader?sourceMap', options: { sourceMap: true, modules: true, importLoaders: 1 }},
+        { loader: 'css-loader', options: { sourceMap: true, modules: true, importLoaders: 1, localIdentName: "[name]--[local]--[hash:base64:8]" }},
         { loader:'postcss-loader', options: {  sourceMap: true, plugins: () => postcssPlugins()}},
         { loader:'sass-loader', options: { sourceMap: true, includePaths: [path.resolve(__dirname, 'src', 'styles/scss')] } }
       ]}
     ]
   },
   resolve: {
-    extensions: ['*', '.js', 'jsx', '.json']
+    extensions: ['*', '.js', 'jsx', '.json', '.css', 'scss'],
+    alias: {
+      Components: path.resolve(__dirname, "src/components/"),
+      Reducers: path.resolve(__dirname, "src/reducers/")
+    }
   }
 }

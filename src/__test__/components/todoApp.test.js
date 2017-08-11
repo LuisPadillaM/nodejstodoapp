@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
 import "isomorphic-fetch";
-import TodoApp from "./todoApp";
+import TodoApp from "Components/todoApp";
 
 test('Todo App render test', () => {
   const component = renderer.create(

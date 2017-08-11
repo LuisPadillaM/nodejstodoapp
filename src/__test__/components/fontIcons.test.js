@@ -1,5 +1,5 @@
 import React from 'react';
-import FontIcons from './fontIcons.js';
+import FontIcons from 'Components/fontIcons.js';
 import renderer from 'react-test-renderer';
 
 test('Font icons render test', () => {

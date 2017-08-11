@@ -1,0 +1,11 @@
+Plural courses
+
+https://app.pluralsight.com/player?course=node-intro&author=paul-ofallon&name=node-intro-m5-web&clip=5
+https://app.pluralsight.com/player?course=reactive-programming-rxjs-getting-started&author=scott-allen&name=reactive-programming-rxjs-getting-started-m2&clip=4&mode=live
+https://app.pluralsight.com/player?course=react-redux-react-router-es6&author=cory-house&name=react-redux-react-router-es6-m2&clip=16
+https://app.pluralsight.com/player?course=react-flux-building-applications&author=cory-house&name=react-flux-building-applications-m7&clip=4
+https://app.pluralsight.com/player?course=javascript-development-environment&author=cory-house&name=javascript-development-environment-m13&clip=0
+https://app.pluralsight.com/player?course=flux-redux-mastering&author=daniel-stern&name=flux-redux-mastering-m4&clip=6&mode=live
+https://app.pluralsight.com/player?course=webpack-fundamentals&author=joe-eames&name=webpack-fundamentals-m2&clip=8&mode=live
+https://app.pluralsight.com/player?course=illustrator-cc-fundamentals&author=matthew-pizzi&name=illustrator-cc-fundamentals-m2&clip=8
+https://app.pluralsight.com/player?course=graphql-scalable-apis&author=samer-buna&name=graphql-scalable-apis-m1&clip=3&mode=live

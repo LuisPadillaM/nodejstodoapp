@@ -15,7 +15,7 @@ const Header = () =>
   (
     <AppBar title='Todo App' leftIcon='menu' rightIcon={<GithubIcon />}>
       <Navigation type='horizontal'>
-        <Link to="/todo">Home</Link>
+        <Link to="/">App</Link>
         <Link to="/about">About</Link>
       </Navigation>
     </AppBar>

@@ -43,6 +43,7 @@ exports[`Todo Items render test 1`] = `
                   aria-label=""
                   className="material-icons"
                   data-react-toolbox="font-icon"
+                  onClick={[Function]}
                 >
                   edit
                 </span>
@@ -60,6 +61,62 @@ exports[`Todo Items render test 1`] = `
         </span>
       </span>
     </li>
+    <div
+      className="hide"
+    >
+      <div
+        className="editInput"
+      >
+        <div
+          className=""
+          data-react-toolbox="input"
+        >
+          <input
+            className="undefined"
+            defaultValue={undefined}
+            disabled={false}
+            maxLength={undefined}
+            name={undefined}
+            onChange={[Function]}
+            onKeyPress={undefined}
+            required={false}
+            role="input"
+            type="text"
+            value="doSomething"
+          />
+          <span
+            className={undefined}
+          />
+          <label
+            className=""
+          >
+            Edit
+          </label>
+        </div>
+      </div>
+      <div
+        className="icons"
+      >
+        <span>
+          <span
+            aria-label=""
+            className="material-icons"
+            data-react-toolbox="font-icon"
+            onClick={[Function]}
+          >
+            done
+          </span>
+          <span
+            aria-label=""
+            className="material-icons"
+            data-react-toolbox="font-icon"
+            onClick={[Function]}
+          >
+            clear
+          </span>
+        </span>
+      </div>
+    </div>
     <hr
       className={undefined}
     />
@@ -102,6 +159,7 @@ exports[`Todo Items render test 1`] = `
                   aria-label=""
                   className="material-icons"
                   data-react-toolbox="font-icon"
+                  onClick={[Function]}
                 >
                   edit
                 </span>
@@ -119,6 +177,62 @@ exports[`Todo Items render test 1`] = `
         </span>
       </span>
     </li>
+    <div
+      className="hide"
+    >
+      <div
+        className="editInput"
+      >
+        <div
+          className=""
+          data-react-toolbox="input"
+        >
+          <input
+            className="undefined"
+            defaultValue={undefined}
+            disabled={false}
+            maxLength={undefined}
+            name={undefined}
+            onChange={[Function]}
+            onKeyPress={undefined}
+            required={false}
+            role="input"
+            type="text"
+            value="doSomethingElse"
+          />
+          <span
+            className={undefined}
+          />
+          <label
+            className=""
+          >
+            Edit
+          </label>
+        </div>
+      </div>
+      <div
+        className="icons"
+      >
+        <span>
+          <span
+            aria-label=""
+            className="material-icons"
+            data-react-toolbox="font-icon"
+            onClick={[Function]}
+          >
+            done
+          </span>
+          <span
+            aria-label=""
+            className="material-icons"
+            data-react-toolbox="font-icon"
+            onClick={[Function]}
+          >
+            clear
+          </span>
+        </span>
+      </div>
+    </div>
     <hr
       className={undefined}
     />

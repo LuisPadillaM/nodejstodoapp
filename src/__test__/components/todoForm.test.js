@@ -1,11 +1,14 @@
 import React from 'react';
-import Loader from './Loader.js';
 import renderer from 'react-test-renderer';
+import TodoForm from 'Components/todoForm.js';
 
-test('Loader render test', () => {
+
+test('TodoForm render test', () => {
+
   const component = renderer.create(
-    <Loader/>
+    <TodoForm add={(x) => x} />
   );
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
+

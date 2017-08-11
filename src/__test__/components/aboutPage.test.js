@@ -1,14 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import TodoForm from './todoForm.js';
+import AboutPage from "Components/aboutPage";
 
-
-test('TodoForm render test', () => {
-
+test('About page render test', () => {
   const component = renderer.create(
-    <TodoForm add={(x) => x} />
+    <AboutPage/>
   );
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
-

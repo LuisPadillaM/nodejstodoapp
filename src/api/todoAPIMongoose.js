@@ -1,5 +1,5 @@
 import "whatwg-fetch";
-import { get, add, del } from "./request";
+import { get, add, del, update } from "./request";
 
 export function getTodo() {
   return get("todolist");
@@ -15,6 +15,10 @@ export function deleteItem(id) {
 
 export function addItem(item) {
   return add(`todolist/`, item);
+}
+
+export function updateItem(id, item) {
+  return update(`todolist/${id}`, item);
 }
 
 

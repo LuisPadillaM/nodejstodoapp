@@ -1,5 +1,5 @@
 let mongoose = require('mongoose');
-let Todo = require('../model/todo');
+let Todo = require('../model/Todo');
 
 exports.get = function(req, res){
   Todo.find({}, function(err, data){
@@ -24,30 +24,41 @@ exports.post =  function(req, res){
 };
 
 exports.delete = function(req, res){
-  Todo.findById(req.params.id).remove(function(err, data){
+  // Todo.findById(req.params.id).remove(function(err, data){
+  //   if(err) throw err;
+  //   res.json(data);
+  // })
+  Todo.findByIdAndRemove(req.params.id, function(err){
     if(err) throw err;
-    res.json(data);
+    return res.json({ success: true });
   })
 };
 
 exports.update = function(req, res){
-	Todo.findById(req.params.id,function (err, data) {
-    if (!data){
-       res.json({ success: false });
-    } else {
-      // req.reviews = data;
-      //   // modelHelper.updateByRole.reviews(helper.decodeToken(helper.getToken(req)).role, req.body);
-      // for(var p in req.body)
-      // {
-      //   req.reviews[p] = req.body[p];
-      // }
-      // req.reviews.save(function(err) {
-      //   if (err){
-      //     return res.json({ success: false });
-      //   } else{
-      //     return res.json({ success: true });
-      //   }
-      // });
-    }
-	});
+	// Todo.findById(req.params.id,function (err, todo) {
+
+  //     if (err) throw err;
+
+  //     req.todo = todo;
+
+  //     for(let prop in req.body)
+  //     {
+  //       req.todo[prop] = req.body[prop];
+  //     }
+
+  //     req.todo.save(function(err) {
+
+  //       if (err)
+  //         throw err;
+
+  //       return res.json({ success: true });
+
+  //     });
+
+	// });
+  Todo.findByIdAndUpdate(req.params.id, req.body, function(err, todo){
+    if(err) throw err;
+    console.log(todo);
+    return res.json({ success: true });
+  })
 };

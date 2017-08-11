@@ -19,6 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(webpackDevMiddleware(compiler, {
+  noInfo: true,
   publicPath: webpackConfig.output.publicPath
 }))
 

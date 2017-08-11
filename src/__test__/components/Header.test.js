@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
-import App from "./App";
+import Header from "Components/Header";
 
-test('App render test', () => {
+test('Header render test', () => {
   const component = renderer.create(
     <MemoryRouter>
-      <App/>
+      <Header/>
     </MemoryRouter>
   );
   let tree = component.toJSON();

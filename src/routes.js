@@ -2,14 +2,16 @@
 
 let React = require("react");
 import { Switch, Route } from 'react-router-dom';
-import AboutPage from "./components/AboutPage";
-import TodoApp from "./components/todoApp";
+import AboutPage from "Components/AboutPage";
+import TodoApp from "Components/todoApp";
+import NotFound from "Components/404";
 
 const Routes = () => (
   <main>
     <Switch>
-      <Route path="/todo" component={TodoApp}/>
+      <Route path="/" component={TodoApp}/>
       <Route path="/about" component={AboutPage}/>
+      <Route component={NotFound}/>
     </Switch>
   </main>
 )
